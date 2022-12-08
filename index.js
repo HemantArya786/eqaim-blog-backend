@@ -4,7 +4,7 @@ const blog = require("./Model/blogModel");
 const cors = require("cors");
 const blogRoutes = require("./routes/blogs.routes.js");
 const app = express();
-const port = 3500;
+const port = 3500 || process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
